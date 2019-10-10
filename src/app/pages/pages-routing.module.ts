@@ -21,7 +21,7 @@ const routes: Routes = [
     canActivate: [SimpleGuard],
     canActivateChild: [SimpleGuard],
     children: [
-      { path: '', redirectTo: 'account/register', pathMatch: 'full' },
+      { path: '', redirectTo: 'dashboard/monitor', pathMatch: 'full' },
       { path: 'dashboard', redirectTo: 'dashboard/monitor', pathMatch: 'full' },
       { path: 'dashboard/analysis', component: DashboardAnalysisComponent },
       { path: 'dashboard/monitor', component: DashboardMonitorComponent },
