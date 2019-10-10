@@ -1,0 +1,71 @@
+<form [formGroup]="form" (ngSubmit)="submit()" role="form" class="form-signin">
+        <div class="text-center mb-4">
+            <img class="mb-4" src="/assets/img/logo/bootstrap-solid.svg" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">ng-business</h1>
+            <p>武林中最有影响力的《葵花宝典》</p>
+        </div>
+        <div class="alert alert-danger d-block" role="alert" *ngIf="error">
+            {{error}}
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><fa-icon [icon]="faUser"></fa-icon></div> 
+                </div>
+                <input type="text" formControlName="username" class="form-control" id="username" placeholder="用户名"> 
+            </div>
+            <div *ngIf="username.dirty && username.errors" class="form-text text-danger">请输入用户名!</div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><fa-icon [icon]="faMail"></fa-icon></div> 
+                </div>
+                <input type="email" formControlName="email" class="form-control" id="email" placeholder="邮箱"> 
+            </div>
+            <div *ngIf="email.dirty && email.errors" class="form-text text-danger">请输入邮箱!</div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><fa-icon [icon]="faLock"></fa-icon></div> 
+                </div>
+                <input type="password" formControlName="password" class="form-control" id="password" placeholder="密码">
+            </div>
+            <div *ngIf="password.dirty && password.errors" class="form-text text-danger">请输入密码!</div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><fa-icon [icon]="faLock"></fa-icon></div> 
+                </div>
+                <input type="password" formControlName="confirm" class="form-control" id="confirm" placeholder="确认密码">
+            </div>
+            <div *ngIf="confirm.dirty && confirm.errors" class="form-text text-danger">请输入确认密码!</div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><fa-icon [icon]="faPhone"></fa-icon></div> 
+                </div>
+                <input type="text" formControlName="mobile" class="form-control" id="mobile" placeholder="手机号码">
+            </div>
+            <div *ngIf="mobile.dirty && mobile.errors" class="form-text text-danger">请输入手机号码!</div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><fa-icon [icon]="faPen"></fa-icon></div> 
+                </div>
+                <input type="text" formControlName="captcha" class="form-control" id="captcha" placeholder="验证码">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-primary">获取验证码</button>
+                </div>
+            </div>
+            <div *ngIf="captcha.dirty && captcha.errors" class="form-text text-danger">请输入验证码!</div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block mb-3">注册</button>
+        <div class="form-group">
+            <a [routerLink]="['/account/login']" class="text-decoration-none float-right">使用已有账户登录</a>
+        </div>
+    </form>

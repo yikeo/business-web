@@ -17,7 +17,16 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@shared": [ "src/app/shared/index" ],
+      "@shared/*": [ "src/app/shared/*" ],
+      "@core": [ "src/app/core/index" ],
+      "@core/*": [ "src/app/core/*" ],
+      "@core/auth": [ "src/app/core/auth/index" ],
+      "@core/auth/*": [ "src/app/core/auth/*" ],
+      "@env/*": [ "src/environments/*" ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

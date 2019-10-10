@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'business-web';
+  checkModel: any = { left: false, middle: true, right: false };
 }
