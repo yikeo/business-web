@@ -2,26 +2,32 @@
     <div class="container">
         <div class="row">
           <div class="col-lg-5 col-xs-12 about-company">
-            <h2>Heading</h2>
-            <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
-            <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+            <h2>NgBusiness</h2>
+            <p class="pr-5 text-white-50">作者很懒，没有写任何关于项目的说明，请大家自行理解！ </p>
+            <h5>
+              <a href="#"><fa-icon [icon]="faWeixin" class="mr-2"></fa-icon></a>
+              <a href="#"><fa-icon [icon]="faQq" class="mr-2"></fa-icon></a>
+              <a href="#"><fa-icon [icon]="faWeibo" class="mr-2"></fa-icon></a>
+              <a href="https://github.com/yikeo/business-web"><fa-icon [icon]="faGithub"></fa-icon></a>
+            </h5>
           </div>
           <div class="col-lg-3 col-xs-12 links">
-            <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+            <h4 class="mt-lg-0 mt-sm-3">友军链接</h4>
               <ul class="m-0 p-0">
-                <li>- <a href="#">Lorem ipsum</a></li>
-                <li>- <a href="#">Nam mauris velit</a></li>
-                <li>- <a href="#">Etiam vitae mauris</a></li>
-                <li>- <a href="#">Fusce scelerisque</a></li>
-                <li>- <a href="#">Sed faucibus</a></li>
-                <li>- <a href="#">Mauris efficitur nulla</a></li>
+                <li>- <a [routerLink]="['/']">本站总部</a></li>
+                <li>- <a [routerLink]="['/']">海军上将</a></li>
+                <li>- <a [routerLink]="['/']">陆军总部</a></li>
+                <li>- <a [routerLink]="['/']">空军一号</a></li>
+                <li>- <a [routerLink]="['/']">核潜艇</a></li>
+                <li>- <a [routerLink]="['/']">脚男Footman</a></li>
+                <li>- <a [routerLink]="['/']">弓箭手</a></li>
               </ul>
           </div>
           <div class="col-lg-4 col-xs-12 location">
-            <h4 class="mt-lg-0 mt-sm-4">Location</h4>
-            <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
-            <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
-            <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+            <h4 class="mt-lg-0 mt-sm-4">联系作者</h4>
+            <p>Some number, Some Streat, Some City</p>
+            <p class="mb-0"><i class="fa fa-phone mr-3"></i>(010) 123-456789</p>
+            <p><i class="fa fa-envelope-o mr-3"></i>wujing0510@live.com</p>
           </div>
         </div>
         <div class="row mt-5">

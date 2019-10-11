@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faLemon } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-monitor',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./monitor.component.css']
 })
 export class DashboardMonitorComponent implements OnInit {
+
+  faAddressBook = faLemon;
 
   constructor() { }
 

@@ -1,5 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
+body {
+  color: rgba(0,0,0,.65);
+  font-size: 14px;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  line-height: 22px;
+}
+
 .form-signin {
   width: 100%;
   max-width: 420px;
@@ -7,12 +14,9 @@
   margin: 0 auto;
 }
 
-
 .navbar {
   background-color:#3c8dbc;
   padding: 0 1rem;
-  font-size: 0.875em;
-  line-height: 1.29em;
 }
 
 .navbar .nav-link {
@@ -21,7 +25,7 @@
 }
 
 .navbar .navbar-toggler {
-  margin: 0.25rem 0;
+  margin: 0.16rem 0;
 }
 
 .navbar .nav-item:hover,
@@ -35,6 +39,26 @@
   position: absolute;
 }
 
-/* .navbar-nav .dropdown-menu {
-  position: absolute!important;
-} */
+.content-wrapper, .right-side {
+  background-color: #ecf0f5;
+  border:1px solid #ecf0f5;
+}
+
+.content-header {
+  background: transparent;
+  position: relative;
+  padding: 15px 15px 0 15px;
+}
+
+.content-header .breadcrumb {
+  background: transparent;
+  font-size: 12px;
+}
+
+.content-header .breadcrumb .ng-fa-icon{
+  margin-right: 5px;
+}
+.content-header .breadcrumb > li > a {
+  color: #444;
+  text-decoration: none;
+}
