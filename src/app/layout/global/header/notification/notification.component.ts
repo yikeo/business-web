@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faAddressBook } from '@fortawesome/free-solid-svg-icons';
+import { faBell } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'global-header-notification',
@@ -8,7 +8,7 @@ import { faAddressBook } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderNotificationComponent implements OnInit {
 
-  faUser = faAddressBook;
+  faBell = faBell;
 
   constructor() { }
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faFlag } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'global-header-task',
@@ -8,7 +8,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderTaskComponent implements OnInit {
 
-  faUser = faUser;
+  faFlag = faFlag;
 
   constructor() { }
 

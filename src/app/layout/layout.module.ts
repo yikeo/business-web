@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '@shared';
-import { BsDropdownModule } from 'ngx-bootstrap';
-
+import { BsDropdownModule, CollapseModule } from 'ngx-bootstrap';
 import { LayoutPassportComponent } from './passport/passport.component';
 import { LayoutFullScreenComponent } from './fullscreen/fullscreen.component';
 import { LayoutDefaultComponent } from './default/default.component';
@@ -18,6 +17,7 @@ import { HeaderMessageComponent } from './global/header/message';
   imports: [
     SharedModule,
     BsDropdownModule.forRoot(),
+    CollapseModule.forRoot(),
   ]
 })
 export class LayoutModule { }

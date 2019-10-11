@@ -1,6 +1,9 @@
-<li class="nav-item active dropdown" dropdown>
-    <a class="nav-link" href dropdownToggle (click)="false"><fa-icon [icon]="faUser"></fa-icon></a>
-    <div *dropdownMenu class="dropdown-menu" role="menu">
+<li class="nav-item dropdown" dropdown>
+    <a class="nav-link" href dropdownToggle (click)="false">
+        <fa-icon [icon]="faBell"></fa-icon>
+        <span class="badge badge-warning badge-transform">2</span>
+    </a>
+    <div *dropdownMenu class="dropdown-menu position-absolute" role="menu">
         <a class="dropdown-item" href="#">Action</a>
         <a class="dropdown-item" href="#">Another action</a>
         <a class="dropdown-item" href="#">Something else here</a>

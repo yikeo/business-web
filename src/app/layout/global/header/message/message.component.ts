@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'global-header-message',
@@ -8,7 +8,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderMessageComponent implements OnInit {
 
-  faUser = faUser;
+  faEnvelope = faEnvelope;
 
   constructor() { }
 

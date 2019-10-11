@@ -6,3 +6,35 @@
   padding: 15px;
   margin: 0 auto;
 }
+
+
+.navbar {
+  background-color:#3c8dbc;
+  padding: 0 1rem;
+  font-size: 0.875em;
+  line-height: 1.29em;
+}
+
+.navbar .nav-link {
+  padding: 15px!important;
+  color: white!important;
+}
+
+.navbar .navbar-toggler {
+  margin: 0.25rem 0;
+}
+
+.navbar .nav-item:hover,
+.navbar .active  {
+  background: rgba(0,0,0,0.1);
+}
+
+.navbar .badge-transform {
+  transform: translate(-50%, -50%);
+  padding: .1em .2em;
+  position: absolute;
+}
+
+/* .navbar-nav .dropdown-menu {
+  position: absolute!important;
+} */
