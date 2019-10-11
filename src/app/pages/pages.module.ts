@@ -8,6 +8,7 @@ import { AccountLoginComponent } from './account/login/login.component';
 import { AccountRegisterComponent } from './account/register/register.component';
 import { AccountRegisterResultComponent } from './account/register-result/register-result.component';
 import { PagesRoutingModule } from './pages-routing.module';
+import { AdminExampleComponent } from './admin/example/example.component';
 
 const COMPONENTS = [
   DashboardAnalysisComponent,
@@ -22,7 +23,7 @@ const COMPONENTS_NOROUNT = [];
 
 @NgModule({
   imports: [SharedModule, PagesRoutingModule],
-  declarations: [...COMPONENTS, ...COMPONENTS_NOROUNT],
+  declarations: [...COMPONENTS, ...COMPONENTS_NOROUNT, AdminExampleComponent],
   entryComponents: COMPONENTS_NOROUNT,
 })
 export class PagesModule { }

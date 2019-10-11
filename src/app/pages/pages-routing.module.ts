@@ -13,6 +13,8 @@ import { DashboardWorkplaceComponent } from './dashboard/workplace/workplace.com
 import { AccountLoginComponent } from './account/login/login.component';
 import { AccountRegisterComponent } from './account/register/register.component';
 import { AccountRegisterResultComponent } from './account/register-result/register-result.component';
+import { LayoutAdminComponent } from '../layout/admin/admin.component';
+import { AdminExampleComponent } from './admin/example/example.component';
 
 const routes: Routes = [
   {
@@ -49,6 +51,14 @@ const routes: Routes = [
         component: AccountRegisterResultComponent,
         data: { title: '注册结果', titleI18n: 'app.register.register' },
       }
+    ],
+  },
+  {
+    path: 'admin',
+    component: LayoutAdminComponent,
+    children: [
+      { path: '', redirectTo: 'example', pathMatch: 'full' },
+      { path: 'example', component: AdminExampleComponent },
     ],
   },
   // 单页不包裹Layout

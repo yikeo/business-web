@@ -1,0 +1,23 @@
+<header>
+    <nav class="navbar navbar-dark sticky-top p-0">
+        
+        <a class="navbar-brand" [routerLink]="['/admin']">
+            <span class="d-none d-md-block"><b>NG</b>Business</span>
+            <span class="d-block d-md-none"><b>NG</b>B</span>
+        </a>
+        <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <ul class="navbar-nav flex-row ml-auto">
+            <global-header-message></global-header-message>
+            <global-header-notification></global-header-notification>
+            <global-header-task></global-header-task>
+        </ul>
+    </nav>
+</header>
+<div class="row">
+    <div class="col"></div>
+    <div class="col-autp"></div>
+</div>
