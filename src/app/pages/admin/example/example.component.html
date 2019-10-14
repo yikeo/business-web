@@ -1,1 +1,54 @@
-<p>example works!</p>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, Bootstrap Table!</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style type="text/css">
+        .layout-border {
+            height: 100vh!important;
+            width: 100%!important;
+            position: relative;
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            min-width: 0;
+        }
+        .layout-border-middle {
+            -webkit-box-flex: 1;
+            flex: 1 1 auto;
+            -ms-flex-align: stretch!important;
+            align-items: stretch!important;
+            display: -ms-flexbox!important;
+            display: flex!important;
+        }
+        .layout-border-center {
+            -ms-flex-positive: 1!important;
+            flex-grow: 1!important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout-border">
+        <div class="layout-border-north">north</div>
+        <div class="layout-border-middle">
+            <div class="layout-border-east">east</div>
+            <div class="layout-border-center">center</div>
+            <div class="layout-border-west">west</div>
+        </div>
+        <div class="layout-border-south">south</div>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

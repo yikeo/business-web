@@ -18,3 +18,8 @@
 .navbar .navbar-toggler:hover {
     background-color: #367fa9;
 }
+
+.main-sidebar {
+    width:230px;
+    background-color: #222d32;
+}

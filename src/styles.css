@@ -7,6 +7,30 @@ body {
   line-height: 22px;
 }
 
+.layout-border {
+  height: 100vh!important;
+  width: 100%!important;
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  min-width: 0;
+}
+.layout-border-middle {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  -ms-flex-align: stretch!important;
+  align-items: stretch!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+.layout-border-center {
+  -ms-flex-positive: 1!important;
+  flex-grow: 1!important;
+}
+
 .form-signin {
   width: 100%;
   max-width: 420px;
